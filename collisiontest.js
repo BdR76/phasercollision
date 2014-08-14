@@ -55,12 +55,7 @@ player.body.angle = 45;
 	dum3 = game.add.sprite(0, 0, null, 0, playerHitGroup);
 	dum3.body.setSize(32, 32);
 	dum3.anchor.setTo(0.5, 0.5);
-	
-	// next lines has no effect, still no collisions
-	game.physics.enable(dum1, Phaser.Physics.ARCADE);
-	game.physics.enable(dum2, Phaser.Physics.ARCADE);
-	game.physics.enable(dum3, Phaser.Physics.ARCADE);
-	
+
 	// the shapes
 	shapesGroup = game.add.group();
 	shapesGroup.enableBody = true;
