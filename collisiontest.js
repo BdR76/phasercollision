@@ -4,6 +4,7 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: p
 var player;
 var dum1;
 var dum2;
+var dum3;
 var playerHitGroup;
 var shapesGroup;
 var msgText;
@@ -40,7 +41,7 @@ function create() {
 player.angle = 45;
 player.body.angle = 45;
 
-	// the player collisoin sprites
+	// the player collision sprites
 	playerHitGroup = game.add.group();
 	playerHitGroup.enableBody = true;
 	playerHitGroup.physicsBodyType = Phaser.Physics.ARCADE;
